@@ -6,17 +6,21 @@ using UnityEngine;
 public class Mole : MonoBehaviour
 {
     public Color colour;
+    
     // Start is called before the first frame update
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer sprite;
     void Start()
     {
-        SpriteRenderer sprite = GetComponent<SpriteRenderer>(); 
+        sprite = GetComponent<SpriteRenderer>(); 
         sprite.color = colour;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    }
+
+    void OnMouseDown() 
+    {   
     }
 }
